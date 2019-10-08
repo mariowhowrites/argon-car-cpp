@@ -21,6 +21,9 @@ const int DECELERATION_CUTOFF = 50;
 // Given the deceleration cutoff, how much to decelerate on each round to get to 0 by the end.
 const double DECELERATION_RATE = 255 / DECELERATION_CUTOFF;
 
+// How much to add to the engine's counter per command received
+const int COMMAND_VALUE = 75;
+
 // Mock digitalWrite to display output
 void digitalWrite(string pin, int value)
 {
@@ -38,10 +41,10 @@ public:
   {
     command_map = {
         {positive_str, [&] {
-           add_direction(75);
+           add_direction(COMMAND_VALUE);
          }},
         {negative_str, [&] {
-           add_direction(-75);
+           add_direction(COMMAND_VALUE);
          }}};
   };
 
