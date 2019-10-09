@@ -79,7 +79,7 @@ public:
     }
   }
 
-private:
+protected:
   command_map_t command_map;
   int count;
   string negative_pin;
