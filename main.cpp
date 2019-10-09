@@ -44,7 +44,7 @@ public:
            add_direction(COMMAND_VALUE);
          }},
         {negative_str, [&] {
-           add_direction(COMMAND_VALUE);
+           add_direction(-COMMAND_VALUE);
          }}};
   };
 
