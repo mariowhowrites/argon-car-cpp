@@ -175,16 +175,6 @@ int main()
 
 /**
  * 
- * What's our basic logic here?
- * 
- * We want a queue for our commands, a decayer that pulls from the queue at a given speed,
- * a "logic" section that translates commands to motor pulses.
- * 
- * 
-*/
-
-/**
- * 
  * Basic math:
  * 
  * Should be decelerating for 2.5 seconds for 1s of acceleration. 
